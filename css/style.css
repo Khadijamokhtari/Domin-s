@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height:100vh;  /*100 pour cent d'hauteur*/
+    background-image: url('../img/bg.jpg');
+    background-size: cover; /*pour remplir le font avec la photo*/
+    background-repeat: no-repeat; /*ne pas repeter l'image*/
+    text-transform: uppercase; /* magiscule*/
+    text-align: center;/* poser le contenu au centre */
+    display:flex; /* aligner le conteu cote a cote */
+    flex-direction: column;
+    font-family: arial;
+}
+header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* espace entre le contenu de header*/
+}
+header nav {
+
+    display: flex;
+    flex:1 1 600px;
+    justify-content: flex-end;
+    margin-right: 40px;
+    align-items: center; /*descendre la ligne (centrer de haut en bas */
+}
+header nav a {
+    padding:10px 20px ;
+    text-decoration: none;/* supprimer la ligne au dessous le nav*/
+    color: antiquewhite;/*couleur d'écriture*/
+}
+header .logo{
+    width: 150px;
+    height: 150px;
+    flex: 0 1 150px;
+    margin: left 100px;
+}
+header .logo img{
+    height:inherit;
+    width:inherit;/* heriter les les propriétés de la class logo*/
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+.main h1{
+    font-size: 3em;/*1em=16px*/
+    color:white;
+    padding-bottom:50px;
+
+}
+.main h3{
+    font-size: 3em;
+    color: yellow;
+    padding-bottom: 30px;
+    font-weight: 400;/*diminuer la taille d'écriture*/
+}
+.main p{
+    color: white;
+    font-weight: 100;
+}
+.bouton{
+    width: 250px;
+    padding: 20px 15px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: yellow;
+
+}
+.bouton:hover{/* lorsque on appui sur le boutton*/
+    background-color: brown;
+    border-color: red;
+    transform: rotate(5deg); /*rotation de boutton*/
+    transition: all 0.2s ease-in-out;
+
+
+}
